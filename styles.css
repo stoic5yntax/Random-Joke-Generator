@@ -77,14 +77,6 @@ body {
   font-size: 2rem;
 }
 
-.joke--container small {
-  background-color: #e30429;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  margin-left: 0.5rem;
-  padding: 0.25rem 0.5rem;
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 430px) {
   body {
