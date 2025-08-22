@@ -1,5 +1,4 @@
 const API_URL = "https://official-joke-api.appspot.com/random_joke";
-
 const jokeContainer = document.getElementById("content-container");
 const button = document.getElementById("generateBtn");
 
@@ -14,9 +13,8 @@ jokeContainer.innerHTML = `
 // FUCTIONS
 const displayJoke = (joke) => {
   jokeContainer.innerHTML = `
-    <p id="setup-element">
+  <p id="setup-element">
       ❝ ${joke.setup} 🤔 ❞
-      <small>${joke.type}</small>
     </p>
     <p id="punchline-element">...</p>
   `;
@@ -24,7 +22,7 @@ const displayJoke = (joke) => {
   setTimeout(() => {
     document.getElementById(
       "punchline-element"
-    ).textContent = `${joke.punchline} 😆`;
+    ).innerHTML = `${joke.punchline} 😆`;
   }, 3000);
 };
 
