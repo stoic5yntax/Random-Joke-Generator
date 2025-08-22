@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Comic Neue", cursive;
+}
+
+body {
+  align-items: center;
+  background-color: #181818;
+  color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* APP */
+.app {
+  background-color: #212121;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 720px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.app-title {
+  color: #848484;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.app button {
+  background: #ab1e1e;
+  border: none;
+  border-radius: 8px;
+  color: #e8e8e8;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem;
+  transition: background 0.2s ease;
+}
+
+.app button:hover {
+  background: #e30429;
+}
+
+.joke--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.joke--container h2 {
+  color: #616161;
+  font-size: 1.75rem;
+}
+
+.joke--container p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.joke--container p:first-child {
+  font-size: 2rem;
+}
+
+.joke--container small {
+  background-color: #e30429;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 430px) {
+  body {
+    padding: 1rem;
+  }
+
+  .app {
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .app-title {
+    font-size: 1.1rem;
+  }
+
+  .app button {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    width: 100%;
+  }
+
+  .joke--container {
+    overflow-y: scroll;
+  }
+
+  .joke--container p {
+    font-size: 1.1rem;
+  }
+
+  .joke--container p:first-child {
+    font-size: 1.45rem;
+  }
+}
